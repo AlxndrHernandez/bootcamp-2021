@@ -11,3 +11,5 @@ func main() {
 	fmt.Println("el precio total del producto aplicando el descuento, es de:", total)
 
 }
+
+//hola
