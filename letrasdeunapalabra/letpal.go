@@ -5,7 +5,8 @@ import "fmt"
 func main() {
 
 	var palabra string = "computadora"
-
+	pointer := &palabra
+	fmt.Printf("la direccion de memoria es %p, %p y su contenido es %s \n", pointer, &palabra, *pointer)
 	fmt.Println(len(palabra))
 
 	for _, p := range palabra {
