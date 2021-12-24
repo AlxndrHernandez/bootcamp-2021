@@ -23,7 +23,7 @@ func main() {
 		fallthrough
 
 	case sueldo < 100000:
-		fmt.Println("al tener un suedo menor a 100.000 se te cobrará interez")
+		fmt.Println("al tener un suedo menor a 100.000 se te cobrará interes")
 
 	default:
 		fmt.Println("cumples con los requisitos")
