@@ -4,12 +4,13 @@ import "fmt"
 
 func main() {
 
-	var minutos int = 120
-	var categoria string = "a"
+	var minutos int = 2600
+	var categoria string = "c"
 
 	if categoria == "a" {
 
-		horas := minutos / 60
+		var horas float64 = float64(minutos) / 60
+		fmt.Println(horas)
 
 		sueldo := float64(horas*3000) * 1.5
 
@@ -17,7 +18,7 @@ func main() {
 
 	} else if categoria == "b" {
 
-		horas := minutos / 60
+		var horas float64 = float64(minutos) / 60
 
 		var sueldo float64 = float64(horas*1500) * 1.2
 
@@ -25,9 +26,9 @@ func main() {
 
 	} else if categoria == "c" {
 
-		horas := minutos / 60
+		var horas float64 = float64(minutos) / 60
 
-		var sueldo float64 = float64(horas * 1000)
+		sueldo := horas * 1000
 
 		fmt.Println("el total de tu sueldo es de :", sueldo)
 
