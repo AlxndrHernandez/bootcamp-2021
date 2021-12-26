@@ -26,6 +26,7 @@ func main() {
 	fmt.Println("Se agrega al empleado Federico")
 	employees["Federico"] = 25
 	fmt.Println(employees)
+
 	fmt.Println("Se elimina al empleado Pedro")
 	delete(employees, "Pedro")
 	fmt.Println(employees)
