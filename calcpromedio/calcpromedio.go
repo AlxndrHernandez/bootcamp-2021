@@ -8,20 +8,16 @@ import (
 func calcPromedio(notas ...float64) (float64, error) {
 
 	var resultado float64
-	var count int = 0
-	for i, a := range notas {
 
+	for _, a := range notas {
 		if a <= 0 {
 
-			count += int(a)
-			fmt.Println(count)
-			fmt.Println("la nota ingresada", notas[i], "no esta dentro de los valores permitidos")
+			fmt.Println("la nota ingresada", a, "no esta dentro de los valores permitidos")
 			return 0, errors.New("debe ingresar una nota mayor o igual a 1")
 
 		} else {
 
 			resultado += a / float64(len(notas))
-
 		}
 	}
 	return resultado, nil
